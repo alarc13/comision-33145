@@ -1,0 +1,48 @@
+* {
+margin: 0;
+padding: 0;
+} 
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+} 
+
+header{
+background-color: aqua;
+height: 10vh;
+}
+
+main{
+height: 20vh;
+background-color: white;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+main nav {
+    background-color: violet;
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+
+main aside {
+    background-color: yellow;
+    flex-grow: 1;
+    flex-basis: 20%;
+
+}
+
+main article{
+    background-color: blue;
+    flex-grow: 3;
+    flex-basis: 60%;
+
+
+}
+footer{
+height: 10vh;
+background-color: aqua;
+}

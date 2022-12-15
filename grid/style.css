@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grilla{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.5fr repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "nav header header"
+    "nav main main"
+    "nav main main"
+    "nav footer footer";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+header{
+    background-color: bisque;
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 0.5fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "sectuno sectuno aside"
+    "sectdos sectdos aside";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.sect-1 {
+    width: 100%;
+    background-color: bisque;
+    grid-area: sectuno;
+
+  
+}
+.sect-2{
+    background-color: bisque;
+    grid-area: sectdos;
+}
+aside{
+    background-color: bisque;
+    grid-area: aside;
+}
+nav{
+    background-color: bisque;
+    grid-area: nav;
+}
+footer{
+    background-color: bisque;
+    grid-area: footer;
+}
+@media screen and (max-width: 1400px){
+
+}
+@media screen and (max-width: 1200px){
+}
+@media screen and (max-width: 1024px){
+}
+@media screen and (max-width: 768px){
+    main{
+        grid-template-areas:
+        "sectuno sectuno sectuno"
+        "sectdos sectdos sectdos";
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    aside{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px){
+    .grilla{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 0.5fr repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav header header"
+        "nav main main"
+        "nav main main"
+        "nav footer footer";
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+}
+@media screen and (max-width: 480px){
+}
+@media screen and (max-width: 320px){
+}

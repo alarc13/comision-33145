@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+:root {
+    --fontPrimary:  'Roboto', monospace; 
+    --fontSecundary: 'Josefin Sans', monospace;
+    --fontTertiary: 'Playfair Display', monospace;
+    --colorPrimary: black;   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    inline-size: 100%;
+    font-family: var(--fontPrimary);
+    font-size: 1rem;
+}
+/*HEADER*/
+.header-container{
+    position: relative;
+
+}
+a{
+    text-decoration: none;
+    color: var(--colorPrimary);
+}
+.name-info{
+    position: absolute;
+    font-family: var(--fontSecundary);
+    text-align: left;
+    margin-top: 3.2rem;
+    margin-left: 8rem;
+}
+.author{
+    letter-spacing: 0.188rem;
+    font-size: 0.75rem;
+}
+.info-author{
+    margin-top: 0.25rem;
+    font-family: var(--fontPrimary);
+    font-weight: 300;
+}
+.about{
+    position: absolute;
+    margin-top: 3.5rem;
+    margin-left: 70rem;
+    font-family: var(--fontSecundary);
+    text-align: right;
+}
+/*HEADER END*/
+
+/*MAIN*/
+main{
+    position: relative;
+}
+
+.line-divider-one{
+    position: absolute;
+    width: 94.5rem;
+    border: 0.013rem solid #D9D9D9;
+    margin-top: 9.375rem;
+}
+.line-divider-two{
+    position: absolute;
+    width: 94.5rem;
+    border: 0.013rem solid #D9D9D9;
+    margin-top: 21.875rem;
+}
+.title-about{
+    position: absolute;
+    margin-top: 11.25rem;
+    margin-left: 8rem;
+}
+.title-contact{
+    position: absolute;
+    margin-top: 23.75rem;
+    margin-left: 8rem;
+}
+
+h2{
+    font-family: var(--fontSecundary);
+    font-weight: 400;
+    letter-spacing: 0.188rem;
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+}
+.description-about{
+    width: 80%;
+    font-family: var(--fontPrimary);
+    font-weight: 300;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+.name,
+.country,
+.email,
+.rrss{
+    width: 80%;
+    font-family: var(--fontPrimary);
+    font-weight: 300;
+    font-size: 0.875rem;
+    white-space: nowrap;
+}
+.name{
+    margin-top: 0.5rem;
+}
+.country{
+    margin-top: 0.25rem;
+}
+.flecha{
+    width: 1.875rem;
+    margin-top: 0.5rem;
+}
+
+.email{
+    position: absolute;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    text-decoration:underline;
+}
+.rrss{
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    text-decoration:underline;
+
+}
+.line-divider-three{
+    position: absolute;
+    width: 94.5rem;
+    border: 0.013rem solid #D9D9D9;
+    margin-top: 36.25rem;
+}
+
+/*MAIN END*/
+
+/*ARTICLE*/
+.container-description{
+    position: absolute;
+    font-size: 2.5rem;
+    margin-top: 6.25rem;
+    margin-right: 4.37rem;
+}
+h1{
+    margin-inline: 8rem;
+    font-family: var(--fontTertiary);
+    font-weight: 100;
+}
+/*ARTICLE END*/
+
+/*NAV*/
+.nav-filters{
+    position: absolute;
+    margin-top: 20rem;
+    margin-inline-start: 8rem;
+}
+.filters{
+    position: absolute;
+    font-family: var(--fontSecundary);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    list-style: none;
+}
+
+.filter-all{
+    position: absolute;
+    color: black;
+    text-decoration: none;
+
+}
+.filter-all-isActive{
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.filter-design{
+    position: absolute;
+    left: 2.5rem;
+}
+.filter-design-isActive{
+    position: absolute;
+    left: 2.5rem;
+    font-weight: 700;
+
+}
+.filter-web{
+    position: absolute;
+    white-space: nowrap;
+    left: 6.25rem;
+}
+.filter-web-isActive{
+    position: absolute;
+    white-space: nowrap;
+    left: 6.25rem;
+    font-weight: 700;
+}
+.filter-photography{
+    position: absolute;
+    left: 15rem;
+}
+.filter-photography-isActive{
+    position: absolute;
+    left: 15rem;
+    font-weight: 700;
+}
+/*NAV END*/
+
+/*ASIDE*/
+aside{
+    position: absolute;
+    margin-top: 21.875rem;
+    margin-inline: 8rem;
+    columns: 4;
+}
+.title-card{
+    margin-top: 0.625rem;
+    font-size: 1.125;
+    font-family: var(--fontPrimary);
+    font-weight: 300;
+}
+.description-card{
+    margin-top: 0.625rem;
+    font-family: var(--fontSecundary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.125rem;
+}
+.card-2{
+    margin-left: 0.375rem;
+}
+.card-3{
+    margin-left: 1rem;
+}
+.card-4{
+    margin-left: 1.625rem;
+}
+.image-1,
+.image-2,
+.image-3,
+.image-4{
+    width: 15.625rem;
+    height: 15.625rem;
+    overflow: hidden;
+}
+
+/*ASIDE END*/
+
+.line-divider-footer{
+    position: absolute;
+    width: 94.5rem;
+    border: 0.013rem solid #D9D9D9;
+    margin-top: 43.75rem;
+}
+/*FOOTER*/
+footer{
+    position: relative;
+}
+
+.signing{
+    position: absolute;
+    text-align: center;
+    margin-top: 48.875rem;
+    margin-left: 31.25rem;
+    font-family: var(--fontSecundary);
+    font-size: 0.875rem;
+    padding-bottom: 6.25rem;
+}
+.signing-about{
+    position: absolute;
+    text-align: center;
+    margin-top: 40.875rem;
+    margin-left: 31.25rem;
+    font-family: var(--fontSecundary);
+    font-size: 0.875rem;
+    padding-bottom: 6.25rem;
+}
+/*FOOTER END*/
+
+
+
+
+
